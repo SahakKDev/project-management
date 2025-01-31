@@ -96,7 +96,7 @@ function App() {
     <SelectedProject
       project={selectedProject}
       onDelete={handleDeleteProject}
-      tasks={tasks.filter((task) => task.projectId === selectedProject.id)}
+      tasks={tasks.filter((task) => task.projectId === selectedProjectId)}
       onAddTask={handleAddTask}
       onDeleteTask={handleDeleteTask}
     />
